@@ -1,0 +1,288 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300;1,400&family=Roboto+Condensed:ital@1&display=swap');
+ :root{
+  --bg1-color: #131417;
+  --bg2-color: #454649;
+  --light-color: #fff;
+  --font-family: 'poppins', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+html{
+  font-size: 62.5%;
+}
+.header{
+  background-color: #131417;
+}
+.navbar{
+  height: 90px;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  color: var(--bg2-color);
+  background: var(--bg1-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+  
+}
+.navbar a{
+  text-decoration: none;
+}
+.logo{
+  font-size: 5rem;
+  color: var(--light-color);
+  text-shadow: 10px 8px 5px  rgb(168, 167, 167);
+}
+.menu{
+  position: absolute;
+  top: 2.5rem;
+  right: 25.5rem;
+}
+.list{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.menu .list .list-item{
+  list-style: none;
+}
+.menu .list .list-item .list-link {
+  color: var(--bg2-color);
+}
+.menu .list .list-item .current {
+  color: var(--light-color);
+}
+.menu .list .list-item .list-link:hover{
+  color: var(--light-color);
+}
+
+#background {
+    background: url('./images/background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: var(--light-color);
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.linear-gradient{
+  background: linear-gradient(to top right,black 100%, transparent);
+  width: 100%;
+  height: 100vh;
+  opacity: 0.6;
+  position: absolute;
+}
+#background h1{
+  font-size: 5rem;
+}
+#background h1 span{
+  background: linear-gradient( to top right, black,darkgreen);
+  font-size: 8rem ;
+}
+@keyframes slide{
+  from{
+    transform: translate(-180px,240px);
+  }
+  to{
+    transform: translate(0,0);
+
+  }
+}
+.header-1{
+  animation-name: slide;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+
+  transform: translateX(-150px);
+}
+.blogs-section{
+  width: 100%;
+  padding: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.blog-card{
+  margin-top: 10px;
+  width: calc(33.33% - 25px);
+  background-color: rgb(247, 246, 243);
+  border-radius: 10px;
+  border: 1px solid rgb(240, 237, 237);
+}
+.hr{
+  width: 40px;
+  padding-left: auto;
+  padding-right: auto;
+}
+.blog-image{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.icoimage{
+  position: relative;
+}
+.fa-share-alt{
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  font-size: 20px;
+  color: var(--light-color);
+}
+.fa-ellipsis{
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  font-size: 20px;
+  color: var(--light-color);
+}
+.blog-image:hover{
+  transform: scale(1.1);
+}
+.blog-title{
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(30, 43, 7);
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: 800;
+}
+.blog-title:hover{
+  color: darkgreen;
+  cursor: pointer;
+}
+.blog-overview{
+  width: 90%;
+  margin: 10px auto 10px auto;
+  line-height: 2rem;
+  font-size: 14px;
+  padding-bottom: 30px;
+  color: grey;
+  border-bottom: 0.8px solid #d3d4d9;
+} 
+.btn.dark{
+  background: var(--bg1-color);
+  color: var(--light-color);
+ 
+}
+.btn.dark:hover{
+  background: rgb(247, 246, 243);
+  color: darkgreen;
+}
+ .btn{
+  text-decoration: none;
+  width:120px;
+   font-size: 1.5rem;
+   text-transform: capitalize;
+   padding-left: 15px;
+   padding-right: auto;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 10px;
+   display: block;
+}
+/********************************POST A BLOG STYLE***********************************************/
+.postablog{
+  position: relative;
+}
+.postablog form{
+  background: #98999b;
+  color: var(--bg1-color);
+  width: 50%;
+  height: 80vh;
+  float: right;
+}
+.postablog img{
+  width: 50%;
+  height: 80vh;
+  float: left;
+}
+/**********************************************ABOUT US  STYLE**************************************/
+.middle{
+  background: url("./images/abouwall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.middle1{
+  position: absolute;
+  background: rgba(30, 43, 7,0.2);
+  top: 200px;
+  left: 1000px;
+  width: 850px;
+  height: 400px;
+  font-size: 2rem;
+}
+.middle1 h1{
+  padding: 0 0px 30px 0px;
+  margin-left: 20px;
+}
+.middle1 p{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+footer {
+  background-color: rgba(16, 50, 16, 0.4);
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.container li {
+  margin: 0 10px;
+}
+
+.container a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.container a:hover {
+ color: darkgreen;
+}
+.container .p{
+margin-top: 900px;
+}
+
+
+

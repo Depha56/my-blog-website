@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+        <a href="">
+          <h2 class="logo">D-blogs</h2>
+        </a>
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="./index.html" class="list-link ">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="./aboutus.html" class="list-link">About us</a>
+            </li>
+            <li class="list-item">
+              <a href="./post-a-blog.html" class="list-link current">Post blog</a>
+            </li> 
+          </ul>
+        </div>
+       <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+       </div>
+        </nav>
+       </header> 
+       <div class="postablog">
+        <img src="./images/post.jpg" alt="">
+        <form id="form">
+           <label>Select image for your blog:  </label><br>
+           <input type="file" name="image" class="text-input" id="blog_image"  >
+           <br><br>
+            <label>Title of blog:   </label><br>
+           <input type="text" name="title"  class="text-input" id="blog_title">
+           <br><br>
+           <label>Body:   </label><br>
+           <textarea name="body"  id="blog_body" cols="60" rows="10"></textarea>
+        <button type="submit" class="btn dark" id="btn">Add post</button>
+        </form>
+       </div>
+       <footer>
+        <div class="container b">
+          <p>&copy; 2023 D-blogs. All rights reserved.</p>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+            <li><a href="./post-a-blog.html">Post a blog</a></li>
+          </ul>
+        </div>
+      </footer>
+       <script src="script.js">
+       
+       </script>
+</body>
+</html>

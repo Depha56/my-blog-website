@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+  <nav class="navbar">
+  <a href="">
+    <h2 class="logo">D-blogs</h2>
+  </a>
+  <div class="menu" id="menu">
+    <ul class="list">
+      <li class="list-item">
+        <a href="./index.html" class="list-link current">Home</a>
+      </li>
+      <li class="list-item">
+        <a href="./aboutus.html" class="list-link">About us</a>
+      </li>
+      <li class="list-item">
+        <a href="./post-a-blog.html" class="list-link">Post blog</a>
+      </li> 
+    </ul>
+  </div>
+ <div class="icons">
+  <i class="fa-solid fa-magnifying-glass"></i>
+ </div>
+  </nav>
+ </header>
+ <div id="background">
+  <h1 class="header-1">Welcome to the best <span>BLOGS</span> website!!</h1>
+    <div class="linear-gradient"></div>
+ </div>
+ <section class="blogs-section">
+  <div class="blog-card">
+  <div class="icoimage">
+    <img src="./images/1.png" class="blog-image" alt="">
+    <i class='fa fa-share-alt'></i>
+    <i class="fa-solid fa-ellipsis"></i>
+  </div>
+    <h1 class="blog-title">Technology started to be enrolled on high level.</h1>
+    <p class="blog-overview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod illo id, mollitia dolores minima adipisci quisquam error iste quas qui suscipit eum magnam ducimus iusto laudantium tempore sint, cupiditate rerum.</p>
+    <a href="/" class="btn dark">Read more</a> 
+  </div>
+  <div class="blog-card">
+    <div class="icoimage">
+      <img src="./images/2.png" class="blog-image" alt="">
+      <i class='fa fa-share-alt'></i>
+      <i class="fa-solid fa-ellipsis"></i>
+    </div>
+    <h1 class="blog-title">Technology started to be enrolled on high level.</h1>
+    <p class="blog-overview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod illo id, mollitia dolores minima adipisci quisquam error iste quas qui suscipit eum magnam ducimus iusto laudantium tempore sint, cupiditate rerum.</p>
+    <a href="/" class="btn dark">Read more</a> 
+  </div>
+  <div class="blog-card">
+    <div class="icoimage">
+      <img src="./images/3.jpg" class="blog-image" alt="">
+      <i class='fa fa-share-alt'></i>
+      <i class="fa-solid fa-ellipsis"></i>
+    </div>
+    <h1 class="blog-title">Health is our priority.</h1>
+    <p class="blog-overview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod illo id, mollitia dolores minima adipisci quisquam error iste quas qui suscipit eum magnam ducimus iusto laudantium tempore sint, cupiditate rerum.</p>
+    <a href="/" class="btn dark">Read more</a> 
+  </div>
+  <div class="blog-card">
+    <div class="icoimage">
+      <img src="./images/4.JPG" class="blog-image" alt="">
+      <i class='fa fa-share-alt'></i>
+      <i class="fa-solid fa-ellipsis"></i>
+    </div>
+    <h1 class="blog-title">Education  started to be enrolled on high level.</h1>
+    <p class="blog-overview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod illo id, mollitia dolores minima adipisci quisquam error iste quas qui suscipit eum magnam ducimus iusto laudantium tempore sint, cupiditate rerum.</p>
+    <a href="/" class="btn dark">Read more</a> 
+  </div>
+  <div class="blog-card">
+    <div class="icoimage">
+      <img src="./images/5.JPG" class="blog-image" alt="">
+      <i class='fa fa-share-alt'></i>
+      <i class="fa-solid fa-ellipsis"></i>
+    </div>
+    <h1 class="blog-title">Technology started to be enrolled on high level.</h1>
+    <p class="blog-overview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod illo id, mollitia dolores minima adipisci quisquam error iste quas qui suscipit eum magnam ducimus iusto laudantium tempore sint, cupiditate rerum.</p>
+    <a href="/" class="btn dark">Read more</a> 
+  </div>
+  <div class="blog-card">
+    <div class="icoimage">
+      <img src="./images/6.JPG" class="blog-image" alt="" id="result_image">
+      <i class='fa fa-share-alt'></i>
+      <i class="fa-solid fa-ellipsis"></i>
+    </div>
+    <h1 class="blog-title" id="result_title">Technology started to be enrolled on high level.</h1>
+    <p class="blog-overview" id="result_body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod illo id, mollitia dolores minima adipisci quisquam error iste quas qui suscipit eum magnam ducimus iusto laudantium tempore sint, cupiditate rerum.</p>
+    <a href="/" class="btn dark">Read more</a> 
+  </div>
+  <div id="result_blogs"></div>
+
+ </section>
+ <footer>
+  <div class="container">
+    <p>&copy; 2023 D-blogs. All rights reserved.</p>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./aboutus.html">About us</a></li>
+      <li><a href="./post-a-blog.html">Post a blog</a></li>
+    </ul>
+  </div>
+</footer>
+ <script>
+   const result_blogs = document.getElementById("result_blogs");
+  //  const img = new Image();
+  //  img.src = url;
+  //  document.body.appendChild(img);
+   const blogtitle = localStorage.getItem('Title');
+   const blogbody = localStorage.getItem('Body');
+   const url = localStorage.getItem('my-image');
+  //  document.getElementById('result_title').textContent = blogtitle;
+  //  document.getElementById('result_body').textContent = blogbody;
+
+   result_blogs.innerHTML += `
+                      <div class="blog-card" style="width: 580px">
+                        <div class="icoimage">
+                          <img src=${url} class="blog-image" alt="" id="result_image">
+                          <i class='fa fa-share-alt'></i>
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <h1 class="blog-title" id="result_title">${blogtitle}</h1>
+                        <p class="blog-overview" id="result_body">${blogbody}</p>
+                        <a href="/" class="btn dark">Read more</a> 
+                      </div>`;
+
+ </script>
+</body>
+</html>
